@@ -1,0 +1,50 @@
+footer{
+    background-color: var(--platinum);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+
+.logo h1{
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    font-weight: 200;
+    font-size: 2.5rem;
+    color: var(--caribbean-current);
+}
+
+.list-footer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 3rem;
+    grid-row-gap: 1.3rem;
+    padding: 2rem;
+}
+
+.list-footer li{
+    list-style: none;
+    font-size: 1.4rem;
+    font-weight: bold;
+    cursor: pointer;
+    color: var(--caribbean-current);
+}
+
+.list-footer li:hover{
+    color: var(--jet);
+}
+
+@media screen and (max-width: 720px){
+    footer{
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .list-footer{
+        grid-column-gap: 1.5rem;
+    }
+    .list-footer li{
+        width: 100%;
+        font-size: 1rem;
+    }
+}
